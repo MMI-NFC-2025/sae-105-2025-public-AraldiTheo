@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHORUS SYMPHONIA - Festival 2025</title>
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+<body>
+    <div class="site">
+        <!-- Header -->
+        <header class="header">
+            <a href="index.html" class="header__logo">
+                <img src="assets/icons/logo.avif" alt="Logo" class="header__logo-img">
+            </a>
+            <button class="header__menu-btn" id="menuBtn">
+                <span class="header__menu-icon"></span>
+                <span class="header__menu-icon"></span>
+                <span class="header__menu-icon"></span>
+            </button>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__overlay"></div>
+            <img src="/assets/image/hero-orchestra.avif" alt="Orchestra" class="hero__image">
+            <div class="hero__content">
+                <h1 class="hero__title">CHORUS<br>SYMPHONIA</h1>
+                <div class="hero__meta">
+                    <div class="hero-pill hero-pill--icon">
+                        <strong>DATES</strong>
+                        <div class="hero-pill__sub">Du 28 au 31 août</div>
+                    </div>
+
+                    <div class="hero-pill hero-pill--icon">
+                        <strong>LIEU</strong>
+                        <div class="hero-pill__sub">La Citadelle De Besançon</div>
+                    </div>
+
+                    <a href="pages/festival.html" class="btn btn--cta">Billetterie Ouverte</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Cards -->
+        <nav class="nav-cards">
+            <a href="pages/festival.html" class="nav-card nav-card--primary">
+                <div class="nav-card__icon">
+                    <img src="assets/icons/calendar.svg" alt="">
+                </div>
+                <div class="nav-card__content">
+                    <h3 class="nav-card__title">Programme</h3>
+                    <p class="nav-card__text">Découvrez tous les concerts</p>
+                </div>
+            </a>
+
+            <a href="pages/artistes.html" class="nav-card nav-card--secondary">
+                <div class="nav-card__icon">
+                    <img src="assets/icons/music.svg" alt="">
+                </div>
+                <div class="nav-card__content">
+                    <h3 class="nav-card__title">Artistes</h3>
+                    <p class="nav-card__text">Découvrez les artistes de cette édition</p>
+                </div>
+            </a>
+
+            <a href="pages/scenes.html" class="nav-card nav-card--tertiary">
+                <div class="nav-card__icon">
+                    <img src="assets/icons/location.svg" alt="">
+                </div>
+                <div class="nav-card__content">
+                    <h3 class="nav-card__title">Infos Pratiques</h3>
+                    <p class="nav-card__text">Tout ce qu'il faut savoir pour venir</p>
+                </div>
+            </a>
+        </nav>
+
+        <!-- Info Section -->
+        <section class="info-section">
+            <h2 class="info-section__title">Nos Partenaires</h2>
+            <div class="info-section__content">
+                <div class="stat-card">
+                    <div class="stat-card__number">6</div>
+                    <div class="stat-card__label">concerts exceptionnels</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__number">2</div>
+                    <div class="stat-card__label">Nos Scènes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__number">3</div>
+                    <div class="stat-card__label">Ensembles invités</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats & Partners -->
+        <section class="stats-partners">
+            <div class="stats-block">
+                <h3 class="stats-block__title">Cette Année</h3>
+                <div class="stats-block__numbers">
+                    <div class="stat">
+                        <div class="stat__number">6</div>
+                        <div class="stat__label">Concerts Symphoniques</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">2</div>
+                        <div class="stat__label">Recitals &amp; Opéras</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">3</div>
+                        <div class="stat__label">Ateliers Participatifs</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partners-panel">
+                <h3 class="partners-panel__title">Nos Partenaires</h3>
+                <div class="partners-list">
+                    <button class="partner-btn">Ville de Besançon</button>
+                    <button class="partner-btn">Région Bourgogne-Franche-Comté</button>
+                    <button class="partner-btn">Ministère de la Culture</button>
+                    <button class="partner-btn">Fondation Bettencourt Schueller</button>
+                    <button class="partner-btn">SACEM</button>
+                    <button class="partner-btn">Mécénat Musical Société Générale</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Card -->
+        <section class="event-card">
+            <h2 class="event-card__title">CHORUS SYMPHONIA</h2>
+            <p class="event-card__subtitle">Festival 2025</p>
+            <p class="event-card__date">Du 28 au 31 août 2025 à La Citadelle de Besançon</p>
+            <a href="pages/festival.html" class="btn btn--secondary">Infos Pratiques</a>
+            <a href="pages/contact.html" class="btn btn--tertiary">Contact</a>
+            <p class="event-card__footer">© 2025 Chorus Symphonia. Tous droits réservés.</p>
+        </section>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav__header">
+                <h2 class="mobile-nav__title">Menu</h2>
+                <button class="mobile-nav__close" id="closeNav">&times;</button>
+            </div>
+            <ul class="mobile-nav__list">
+
+                <li class="mobile-nav__item">
+                    <a href="pages/festival.html" class="mobile-nav__link">Le Festival</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="pages/programme.html" class="mobile-nav__link">Programme</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="pages/artistes.html" class="mobile-nav__link">Artistes</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="pages/scenes.html" class="mobile-nav__link">Les Scènes</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
