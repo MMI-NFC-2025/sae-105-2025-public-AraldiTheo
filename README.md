@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM :Araldi
+- PRÉNOM :Théo
+- GROUPE :C1
 - URL du site :
-- URL FIGMA :
+- URL FIGMA :https://www.figma.com/design/lHPa0J6tXyBF1qf8ecAU6C/Sa%C3%A9-105?node-id=2-866&t=WHK3MsxeKSsr8Skd-0
 
 ## Sujet
 
