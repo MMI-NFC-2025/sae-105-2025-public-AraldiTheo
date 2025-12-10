@@ -25,7 +25,7 @@
 
         <!-- Scene Hero Image -->
         <div class="scene-detail__hero">
-            <img src="https://via.placeholder.com/480x280/9b2346/ffffff?text=Grande+Scène" alt="Grande Scène" class="scene-detail__hero-img">
+            <img src="/assets/image/venue-grande-scene.avif" alt="Grande Scène" class="scene-detail__hero-img">
         </div>
 
         <!-- Scene Info Card -->
@@ -52,47 +52,67 @@
             </p>
         </section>
 
-        <!-- Scene Characteristics -->
+        <!-- Artists on this Scene -->
         <section class="scene-detail__gallery-section">
-            <h2 class="scene-detail__section-title">Caractéristiques de la scène</h2>
-            <div class="scene-detail__cards-grid">
-                <article class="scene-detail__card">
-                    <div class="scene-detail__card-image">
-                        <img src="https://via.placeholder.com/100x100/9b2346/ffffff?text=Capacité" alt="Capacité">
+            <h2 class="scene-detail__section-title">Artistes sur cette scène</h2>
+            <div class="scene-detail__artists-list">
+                <article class="artist-card">
+                    <div class="artist-card__image">
+                        <img src="../assets/image/concert-symphonic.avif" alt="Orchestre Symphonique Régional">
                     </div>
-                    <div class="scene-detail__card-body">
-                        <h3 class="scene-detail__card-title">Capacité</h3>
-                        <p class="scene-detail__card-info">2 000 places assises</p>
-                    </div>
-                </article>
-
-                <article class="scene-detail__card">
-                    <div class="scene-detail__card-image">
-                        <img src="https://via.placeholder.com/100x100/f7941d/ffffff?text=Acoustique" alt="Acoustique">
-                    </div>
-                    <div class="scene-detail__card-body">
-                        <h3 class="scene-detail__card-title">Acoustique</h3>
-                        <p class="scene-detail__card-info">Acoustique naturelle optimale</p>
+                    <div class="artist-card__body">
+                        <h3 class="artist-card__name">Orchestre</h3>
+                        <p class="artist-card__genre">Symphonique Régional</p>
+                        <div class="artist-card__meta">
+                            <p class="artist-card__date">📅 30 août</p>
+                            <p class="artist-card__time">🕖 19:00</p>
+                        </div>
+                        <button class="btn btn--artist">Symphonique</button>
                     </div>
                 </article>
 
-                <article class="scene-detail__card">
-                    <div class="scene-detail__card-image">
-                        <img src="https://via.placeholder.com/100x100/8b1538/ffffff?text=Infrastructure" alt="Infrastructure">
+                <article class="artist-card">
+                    <div class="artist-card__image">
+                        <img src="../assets/image/concert-royal.avif" alt="Ensemble Baroque de Paris">
                     </div>
-                    <div class="scene-detail__card-body">
-                        <h3 class="scene-detail__card-title">Infrastructure</h3>
-                        <p class="scene-detail__card-info">Équipements modernes et historiques</p>
+                    <div class="artist-card__body">
+                        <h3 class="artist-card__name">Ensemble</h3>
+                        <p class="artist-card__genre">Baroque de Paris</p>
+                        <div class="artist-card__meta">
+                            <p class="artist-card__date">📅 29 août</p>
+                            <p class="artist-card__time">🕖 20:00</p>
+                        </div>
+                        <button class="btn btn--artist">Musique Baroque</button>
                     </div>
                 </article>
 
-                <article class="scene-detail__card">
-                    <div class="scene-detail__card-image">
-                        <img src="https://via.placeholder.com/100x100/9b2346/ffffff?text=Accessibilité" alt="Accessibilité">
+                <article class="artist-card">
+                    <div class="artist-card__image">
+                        <img src="../assets/image/concert-vocal.avif" alt="Compagnie Lyrique Nationale">
                     </div>
-                    <div class="scene-detail__card-body">
-                        <h3 class="scene-detail__card-title">Accessibilité</h3>
-                        <p class="scene-detail__card-info">Accès PMR disponible</p>
+                    <div class="artist-card__body">
+                        <h3 class="artist-card__name">Compagnie</h3>
+                        <p class="artist-card__genre">Lyrique Nationale</p>
+                        <div class="artist-card__meta">
+                            <p class="artist-card__date">📅 30 août</p>
+                            <p class="artist-card__time">🕖 21:00</p>
+                        </div>
+                        <button class="btn btn--artist">Opéra</button>
+                    </div>
+                </article>
+
+                <article class="artist-card">
+                    <div class="artist-card__image">
+                        <img src="../assets/image/concert-violin.avif" alt="Ensemble Vocal Harmonia">
+                    </div>
+                    <div class="artist-card__body">
+                        <h3 class="artist-card__name">Ensemble</h3>
+                        <p class="artist-card__genre">Vocal Harmonia</p>
+                        <div class="artist-card__meta">
+                            <p class="artist-card__date">📅 31 août</p>
+                            <p class="artist-card__time">🕖 20:00</p>
+                        </div>
+                        <button class="btn btn--artist">Choral</button>
                     </div>
                 </article>
             </div>
@@ -103,15 +123,86 @@
             <a href="programme.html" class="btn btn--cta">Voir le programme</a>
         </section>
 
-        <!-- Footer Event Card -->
-        <section class="event-card">
-            <h2 class="event-card__title">CHORUS SYMPHONIA</h2>
-            <p class="event-card__subtitle">Festival 2025</p>
-            <p class="event-card__date">Du 28 au 31 août 2025 à La Citadelle de Besançon</p>
-            <a href="programme.html" class="btn btn--secondary">Voir le Programme</a>
-            <a href="contact.html" class="btn btn--tertiary">Contact</a>
-            <p class="event-card__footer">© 2025 Chorus Symphonia. Tous droits réservés.</p>
-        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__header">
+                <h2 class="footer__title">CHORUS SYMPHONIA</h2>
+                <p class="footer__subtitle">Festival de Musique Classique</p>
+            </div>
+
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__section-title">MENU</h3>
+                    <ul class="footer__list">
+                        <li><a href="festival.html" class="footer__link">Le Festival</a></li>
+                        <li><a href="programme.html" class="footer__link">Programme</a></li>
+                        <li><a href="artistes.html" class="footer__link">Artistes</a></li>
+                        <li><a href="scenes.html" class="footer__link">Scènes</a></li>
+                        <li><a href="infos.html" class="footer__link">Infos Pratiques</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact & Accès</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__section-title">CONTACT</h3>
+                    <ul class="footer__list footer__list--contact">
+                        <li class="footer__contact-item">
+                            <span class="footer__icon">📍</span>
+                            <div>
+                                <p>La Citadelle</p>
+                                <p>25000 Besançon</p>
+                            </div>
+                        </li>
+                        <li class="footer__contact-item">
+                            <span class="footer__icon">📞</span>
+                            <a href="tel:+33381878333" class="footer__link">03 81 87 83 33</a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <span class="footer__icon">✉️</span>
+                            <a href="mailto:contact@chorussymphonia.fr" class="footer__link">contact@chorussymphonia.fr</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__section-title">NOUS SUIVRE</h3>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <img src="../assets/icons/facebook.svg" alt="Facebook" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <img src="../assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <img src="../assets/icons/twitter.svg" alt="Twitter" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Email">
+                            <img src="../assets/icons/email.svg" alt="Email" class="footer__social-icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__section-title">PARTENAIRES</h3>
+                    <div class="footer__partners">
+                        <div class="footer__partner-badge">Ville de Besançon</div>
+                        <div class="footer__partner-badge">Région Bourgogne-Franche-Comté</div>
+                        <div class="footer__partner-badge">Ministère de la Culture</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Chorus Symphonia. Tous droits réservés.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__bottom-link">Mentions légales</a>
+                    <span class="footer__separator">•</span>
+                    <a href="#" class="footer__bottom-link">Politique de confidentialité</a>
+                    <span class="footer__separator">•</span>
+                    <a href="#" class="footer__bottom-link">CGV</a>
+                </div>
+            </div>
+        </footer>
 
         <!-- Mobile Navigation -->
         <nav class="mobile-nav" id="mobileNav">

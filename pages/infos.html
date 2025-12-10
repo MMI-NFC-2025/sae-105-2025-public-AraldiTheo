@@ -24,15 +24,13 @@
         </header>
 
         <section class="page-intro">
-            <p class="page-intro__text">Tout ce qu'il faut savoir pour venir visite</p>
+            <p class="page-intro__text">Tout ce qu'il faut savoir pour venir visiter le festival</p>
         </section>
 
-        <!-- Info Cards -->
+        <!-- Infos Pratiques Section -->
         <section class="info-list">
             <div class="info-card">
-                <div class="info-card__icon info-card__icon--primary">
-                    <img src="../assets/icons/ticket.svg" alt="">
-                </div>
+                <div class="info-card__icon info-card__icon--primary">🎫</div>
                 <h3 class="info-card__title">Tarifs</h3>
                 <div class="info-card__content">
                     <div class="price-item">
@@ -45,7 +43,7 @@
                     </div>
                     <div class="price-item">
                         <span class="price-item__label">Tarif jeune</span>
-                        <span class="price-item__label-sub">moins de 26 ans et étudiants de moins de 30 ans</span>
+                        <span class="price-item__label-sub">moins de 26 ans</span>
                         <span class="price-item__price">15€</span>
                     </div>
                     <div class="price-item">
@@ -61,23 +59,87 @@
             </div>
 
             <div class="info-card">
-                <div class="info-card__icon info-card__icon--secondary">
-                    <img src="../assets/icons/access.svg" alt="">
+                <div class="info-card__icon info-card__icon--secondary">🚌</div>
+                <h3 class="info-card__title">Transport</h3>
+                
+                <div class="transport-subsection">
+                    <h4 class="transport-subsection__title">En train</h4>
+                    <p class="transport-subsection__text">
+                        Gare TGV de Besançon Franche-Comté à 15 min du centre-ville. Navettes gratuites assurées pendant le festival.
+                    </p>
                 </div>
-                <h3 class="info-card__title">Hébergements</h3>
-                <p class="info-card__text">
-                    Plusieurs hôtels partenaires offrent des tarifs préférentiels aux festivaliers sur présentation du billet. La ville de Besançon propose également de nombreux hébergements à proximité de la Citadelle.
-                </p>
+
+                <div class="transport-subsection">
+                    <h4 class="transport-subsection__title">En voiture</h4>
+                    <p class="transport-subsection__text">
+                        Depuis Paris : A6 puis A39 (3h30)<br>
+                        Depuis Lyon : A42 puis A39 (2h30)<br>
+                        Parkings à Chamars (500 places) et Parking de la Citadelle (300 places). Tarif spécial festivaliers : 5€/jour.
+                    </p>
+                </div>
+
+                <div class="transport-subsection">
+                    <h4 class="transport-subsection__title">Transports en commun</h4>
+                    <p class="transport-subsection__text">
+                        Lignes de bus 3 et 7 depuis le centre-ville. Service renforcé pendant le festival avec des départs toutes les 10 min.
+                    </p>
+                </div>
+
+                <div class="transport-subsection">
+                    <h4 class="transport-subsection__title">À vélo</h4>
+                    <p class="transport-subsection__text">
+                        Parkings à vélos sécurisés disponibles près de chaque scène. Stations VéloCité à proximité.
+                    </p>
+                </div>
             </div>
 
             <div class="info-card">
-                <div class="info-card__icon info-card__icon--tertiary">
-                    <img src="../assets/icons/map.svg" alt="">
-                </div>
-                <h3 class="info-card__title">Message</h3>
+                <div class="info-card__icon info-card__icon--tertiary">🏨</div>
+                <h3 class="info-card__title">Hébergement</h3>
                 <p class="info-card__text">
-                    Un service de navettes gratuites est mis en place entre le centre-ville et la Citadelle pendant toute la durée du festival. Départs toutes les 15 minutes depuis la place de la Révolution.
+                    Plusieurs hôtels partenaires offrent des tarifs préférentiels aux festivaliers sur présentation du billet.
                 </p>
+                <p class="info-card__text">
+                    <strong>Hôtels recommandés:</strong>
+                </p>
+                <ul class="info-card__list">
+                    <li>Hôtel de la Citadelle ★★★ - 89€/nuit</li>
+                    <li>Hôtel Micaud ★★★ - 75€/nuit</li>
+                    <li>Hôtel de France ★★ - 55€/nuit</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card__icon info-card__icon--primary">🍽️</div>
+                <h3 class="info-card__title">Restaurants</h3>
+                <p class="info-card__text">
+                    La Citadelle accueille des food trucks et des restaurateurs locaux pendant le festival.
+                </p>
+                <p class="info-card__text">
+                    <strong>À proximité:</strong>
+                </p>
+                <ul class="info-card__list">
+                    <li>La Maison du Doubs - Cuisine locale</li>
+                    <li>Le Grain de Sel - Cuisine gastronomique</li>
+                    <li>L'Aromatique - Cuisine italienne</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card__icon info-card__icon--secondary">♿</div>
+                <h3 class="info-card__title">Accès</h3>
+                <p class="info-card__text">
+                    Tous les lieux du festival sont accessibles aux personnes en situation de handicap.
+                </p>
+                <p class="info-card__text">
+                    <strong>Services disponibles:</strong>
+                </p>
+                <ul class="info-card__list">
+                    <li>Places réservées en fauteuil roulant</li>
+                    <li>Accompagnateur gratuit</li>
+                    <li>Toilettes accessibles</li>
+                    <li>Parking PMR réservé</li>
+                </ul>
             </div>
         </section>
 
@@ -91,7 +153,7 @@
                     <span class="faq-item__icon">+</span>
                 </button>
                 <div class="faq-item__answer">
-                    <p>Oui, une billetterie est ouverte sur place pendant toute la durée du festival, sous réserve de disponibilité.</p>
+                    <p>Oui, une billetterie est ouverte sur place pendant toute la durée du festival, sous réserve de disponibilité. Nous recommandons cependant d'acheter vos billets en ligne avant le festival pour garantir votre place.</p>
                 </div>
             </div>
 
@@ -101,7 +163,7 @@
                     <span class="faq-item__icon">+</span>
                 </button>
                 <div class="faq-item__answer">
-                    <p>Oui, tous les lieux du festival sont accessibles aux personnes en situation de handicap. Des places réservées sont disponibles.</p>
+                    <p>Oui, tous les lieux du festival sont accessibles aux personnes en situation de handicap. Des places réservées sont disponibles, ainsi qu'un service d'accompagnement gratuit. Consultez notre section Accès pour plus de détails.</p>
                 </div>
             </div>
 
@@ -111,7 +173,7 @@
                     <span class="faq-item__icon">+</span>
                 </button>
                 <div class="faq-item__answer">
-                    <p>Un parking gratuit est disponible à proximité de la Citadelle. Nous recommandons d'utiliser les navettes gratuites depuis le centre-ville.</p>
+                    <p>Un parking gratuit est disponible à proximité de la Citadelle avec des places réservées PMR. Nous recommandons d'utiliser les navettes gratuites depuis le centre-ville pour plus de confort.</p>
                 </div>
             </div>
 
@@ -121,7 +183,7 @@
                     <span class="faq-item__icon">+</span>
                 </button>
                 <div class="faq-item__answer">
-                    <p>Les photos sans flash sont autorisées. Cependant, nous vous demandons de respecter les artistes et le public en limitant l'usage de vos appareils.</p>
+                    <p>Les photos sans flash sont autorisées. Cependant, nous vous demandons de respecter les artistes et le public en limitant l'usage de vos appareils photo pendant les performances.</p>
                 </div>
             </div>
 
@@ -131,20 +193,121 @@
                     <span class="faq-item__icon">+</span>
                 </button>
                 <div class="faq-item__answer">
-                    <p>Tous les concerts ont lieu en salle couverte. En cas de mauvais temps, le festival se déroule normalement.</p>
+                    <p>Tous les concerts ont lieu en salle couverte. En cas de mauvais temps, le festival se déroule normalement. Nous vous recommandons de prévoir un parapluie pour vos déplacements entre le parking et les salles.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-faq="6">
+                <button class="faq-item__question">
+                    <span>Puis-je annuler mon billet?</span>
+                    <span class="faq-item__icon">+</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p>Les annulations sont acceptées jusqu'à 7 jours avant le concert. Aucun remboursement n'est accordé après cette date. Les échanges de billets sont autorisés selon les disponibilités.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-faq="7">
+                <button class="faq-item__question">
+                    <span>Puis-je venir avec des enfants?</span>
+                    <span class="faq-item__icon">+</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p>Oui! Les enfants sont les bienvenus au festival. Des tarifs réduits sont proposés pour les enfants de moins de 12 ans. Certains concerts peuvent être plus adaptés aux familles, consultez le programme pour plus de détails.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-faq="8">
+                <button class="faq-item__question">
+                    <span>Quel est le numéro de contact en cas d'urgence?</span>
+                    <span class="faq-item__icon">+</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p>En cas d'urgence, contactez l'accueil du festival au +33 3 81 87 81 87 ou consultez notre page Contact pour toutes les informations nécessaires.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Footer Event Card -->
-        <section class="event-card">
-            <h2 class="event-card__title">CHORUS SYMPHONIA</h2>
-            <p class="event-card__subtitle">Festival 2025</p>
-            <p class="event-card__date">Du 28 au 31 août 2025 à La Citadelle de Besançon</p>
-            <a href="programme.html" class="btn btn--secondary">Voir le Programme</a>
-            <a href="contact.html" class="btn btn--tertiary">Contact</a>
-            <p class="event-card__footer">© 2025 Chorus Symphonia. Tous droits réservés.</p>
-        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__header">
+                <h2 class="footer__title">CHORUS SYMPHONIA</h2>
+                <p class="footer__subtitle">Festival de Musique Classique</p>
+            </div>
+
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__section-title">MENU</h3>
+                    <ul class="footer__list">
+                        <li><a href="festival.html" class="footer__link">Le Festival</a></li>
+                        <li><a href="programme.html" class="footer__link">Programme</a></li>
+                        <li><a href="artistes.html" class="footer__link">Artistes</a></li>
+                        <li><a href="scenes.html" class="footer__link">Scènes</a></li>
+                        <li><a href="infos.html" class="footer__link">Infos Pratiques</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact & Accès</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__section-title">CONTACT</h3>
+                    <ul class="footer__list footer__list--contact">
+                        <li class="footer__contact-item">
+                            <span class="footer__icon">📍</span>
+                            <div>
+                                <p>La Citadelle</p>
+                                <p>25000 Besançon</p>
+                            </div>
+                        </li>
+                        <li class="footer__contact-item">
+                            <span class="footer__icon">📞</span>
+                            <a href="tel:+33381878333" class="footer__link">03 81 87 83 33</a>
+                        </li>
+                        <li class="footer__contact-item">
+                            <span class="footer__icon">✉️</span>
+                            <a href="mailto:contact@chorussymphonia.fr" class="footer__link">contact@chorussymphonia.fr</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__section-title">NOUS SUIVRE</h3>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <img src="../assets/icons/facebook.svg" alt="Facebook" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <img src="../assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <img src="../assets/icons/twitter.svg" alt="Twitter" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Email">
+                            <img src="../assets/icons/email.svg" alt="Email" class="footer__social-icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__section-title">PARTENAIRES</h3>
+                    <div class="footer__partners">
+                        <div class="footer__partner-badge">Ville de Besançon</div>
+                        <div class="footer__partner-badge">Région Bourgogne-Franche-Comté</div>
+                        <div class="footer__partner-badge">Ministère de la Culture</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Chorus Symphonia. Tous droits réservés.</p>
+                <div class="footer__links">
+                    <a href="#" class="footer__bottom-link">Mentions légales</a>
+                    <span class="footer__separator">•</span>
+                    <a href="#" class="footer__bottom-link">Politique de confidentialité</a>
+                    <span class="footer__separator">•</span>
+                    <a href="#" class="footer__bottom-link">CGV</a>
+                </div>
+            </div>
+        </footer>
 
         <!-- Mobile Navigation -->
         <nav class="mobile-nav" id="mobileNav">
