@@ -57,13 +57,30 @@
                 </p>
             </section>
 
-            <!-- Gallery Section -->
+            <!-- Gallery Carousel Section -->
             <section class="artist-detail__gallery-section">
                 <h2 class="artist-detail__section-title">Galerie</h2>
-                <div class="artist-detail__gallery">
-                    <img src="/assets/image/artist-1.avif" alt="Ensemble photo 1" class="artist-detail__gallery-item">
-                    <img src="/assets/image/artist-4.avif" alt="Ensemble photo 2" class="artist-detail__gallery-item">
-                    <img src="/assets/image/artist-3.avif" alt="Ensemble photo 3" class="artist-detail__gallery-item">
+                <div class="carousel">
+                    <button class="carousel__btn carousel__btn--prev" aria-label="Image précédente"></button>
+                    <div class="carousel__container">
+                        <div class="carousel__track">
+                            <div class="carousel__slide">
+                                <img src="/assets/image/artist-1.avif" alt="Ensemble photo 1" class="carousel__image">
+                            </div>
+                            <div class="carousel__slide">
+                                <img src="/assets/image/artist-4.avif" alt="Ensemble photo 2" class="carousel__image">
+                            </div>
+                            <div class="carousel__slide">
+                                <img src="/assets/image/artist-3.avif" alt="Ensemble photo 3" class="carousel__image">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel__btn carousel__btn--next" aria-label="Image suivante"></button>
+                    <div class="carousel__indicators">
+                        <button class="carousel__indicator carousel__indicator--active" data-slide="0"></button>
+                        <button class="carousel__indicator" data-slide="1"></button>
+                        <button class="carousel__indicator" data-slide="2"></button>
+                    </div>
                 </div>
             </section>
 

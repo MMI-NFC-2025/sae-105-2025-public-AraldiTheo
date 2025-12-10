@@ -110,4 +110,71 @@
       }
     })
   })
+
+  // Carousel functionality
+  const carousels = document.querySelectorAll('.carousel')
+  
+  carousels.forEach(carousel => {
+    const track = carousel.querySelector('.carousel__track')
+    const slides = Array.from(carousel.querySelectorAll('.carousel__slide'))
+    const prevBtn = carousel.querySelector('.carousel__btn--prev')
+    const nextBtn = carousel.querySelector('.carousel__btn--next')
+    const indicators = Array.from(carousel.querySelectorAll('.carousel__indicator'))
+    
+    if (!track || slides.length === 0) return
+    
+    let currentIndex = 0
+    
+    // Move to specific slide
+    function goToSlide(index) {
+      currentIndex = index
+      const offset = -100 * currentIndex
+      track.style.transform = `translateX(${offset}%)`
+      
+      // Update indicators
+      indicators.forEach((indicator, i) => {
+        if (i === currentIndex) {
+          indicator.classList.add('carousel__indicator--active')
+        } else {
+          indicator.classList.remove('carousel__indicator--active')
+        }
+      })
+    }
+    
+    // Next slide
+    function nextSlide() {
+      if (currentIndex < slides.length - 1) {
+        goToSlide(currentIndex + 1)
+      } else {
+        goToSlide(0)
+      }
+    }
+    
+    // Previous slide
+    function prevSlide() {
+      if (currentIndex > 0) {
+        goToSlide(currentIndex - 1)
+      } else {
+        goToSlide(slides.length - 1)
+      }
+    }
+    
+    // Event listeners
+    if (prevBtn) {
+      prevBtn.addEventListener('click', prevSlide)
+    }
+    
+    if (nextBtn) {
+      nextBtn.addEventListener('click', nextSlide)
+    }
+    
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        goToSlide(index)
+      })
+    })
+    
+    // Auto-play (optional, uncomment to enable)
+    // setInterval(nextSlide, 5000)
+  })
 })()
