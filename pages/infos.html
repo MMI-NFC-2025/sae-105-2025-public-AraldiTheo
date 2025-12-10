@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos Pratiques - CHORUS SYMPHONIA</title>
+    <link rel="stylesheet" href="../src/css/variables.css">
+    <link rel="stylesheet" href="../src/css/global.css">
+    <link rel="stylesheet" href="../src/css/infos.css">
+</head>
+<body>
+    <div class="site">
+        <!-- Header -->
+        <header class="header header--secondary">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/icons/logo.avif" alt="Logo" class="header__logo-img">
+            </a>
+            <h1 class="header__title">Infos Pratiques</h1>
+            <button class="header__menu-btn" id="menuBtn">
+                <span class="header__menu-icon"></span>
+                <span class="header__menu-icon"></span>
+                <span class="header__menu-icon"></span>
+            </button>
+        </header>
+
+        <section class="page-intro">
+            <p class="page-intro__text">Tout ce qu'il faut savoir pour venir visite</p>
+        </section>
+
+        <!-- Info Cards -->
+        <section class="info-list">
+            <div class="info-card">
+                <div class="info-card__icon info-card__icon--primary">
+                    <img src="../assets/icons/ticket.svg" alt="">
+                </div>
+                <h3 class="info-card__title">Tarifs</h3>
+                <div class="info-card__content">
+                    <div class="price-item">
+                        <span class="price-item__label">Plein tarif</span>
+                        <span class="price-item__price">35€</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__label">Tarif réduit</span>
+                        <span class="price-item__price">25€</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__label">Tarif jeune</span>
+                        <span class="price-item__label-sub">moins de 26 ans et étudiants de moins de 30 ans</span>
+                        <span class="price-item__price">15€</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__label">Tarif enfant</span>
+                        <span class="price-item__label-sub">moins de 12 ans</span>
+                        <span class="price-item__price">10€</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-item__label">Pass 3 concerts</span>
+                        <span class="price-item__price">90€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card__icon info-card__icon--secondary">
+                    <img src="../assets/icons/access.svg" alt="">
+                </div>
+                <h3 class="info-card__title">Hébergements</h3>
+                <p class="info-card__text">
+                    Plusieurs hôtels partenaires offrent des tarifs préférentiels aux festivaliers sur présentation du billet. La ville de Besançon propose également de nombreux hébergements à proximité de la Citadelle.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card__icon info-card__icon--tertiary">
+                    <img src="../assets/icons/map.svg" alt="">
+                </div>
+                <h3 class="info-card__title">Message</h3>
+                <p class="info-card__text">
+                    Un service de navettes gratuites est mis en place entre le centre-ville et la Citadelle pendant toute la durée du festival. Départs toutes les 15 minutes depuis la place de la Révolution.
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="faq-section__title">FAQ</h2>
+            
+            <div class="faq-item" data-faq="1">
+                <button class="faq-item__question">
+                    <span>Puis-je acheter mes billets sur place?</span>
+                    <span class="faq-item__icon">+</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p>Oui, une billetterie est ouverte sur place pendant toute la durée du festival, sous réserve de disponibilité.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-faq="2">
+                <button class="faq-item__question">
+                    <span>Le festival est-il accessible aux personnes à mobilité réduite?</span>
+                    <span class="faq-item__icon">+</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p>Oui, tous les lieux du festival sont accessibles aux personnes en situation de handicap. Des places réservées sont disponibles.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-faq="3">
+                <button class="faq-item__question">
+                    <span>Y a-t-il un parking à proximité?</span>
+                    <span class="faq-item__icon">+</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p>Un parking gratuit est disponible à proximité de la Citadelle. Nous recommandons d'utiliser les navettes gratuites depuis le centre-ville.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-faq="4">
+                <button class="faq-item__question">
+                    <span>Peut-on prendre des photos pendant les concerts?</span>
+                    <span class="faq-item__icon">+</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p>Les photos sans flash sont autorisées. Cependant, nous vous demandons de respecter les artistes et le public en limitant l'usage de vos appareils.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-faq="5">
+                <button class="faq-item__question">
+                    <span>Que faire en cas de pluie?</span>
+                    <span class="faq-item__icon">+</span>
+                </button>
+                <div class="faq-item__answer">
+                    <p>Tous les concerts ont lieu en salle couverte. En cas de mauvais temps, le festival se déroule normalement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Event Card -->
+        <section class="event-card">
+            <h2 class="event-card__title">CHORUS SYMPHONIA</h2>
+            <p class="event-card__subtitle">Festival 2025</p>
+            <p class="event-card__date">Du 28 au 31 août 2025 à La Citadelle de Besançon</p>
+            <a href="programme.html" class="btn btn--secondary">Voir le Programme</a>
+            <a href="contact.html" class="btn btn--tertiary">Contact</a>
+            <p class="event-card__footer">© 2025 Chorus Symphonia. Tous droits réservés.</p>
+        </section>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav__header">
+                <h2 class="mobile-nav__title">Menu</h2>
+                <button class="mobile-nav__close" id="closeNav">&times;</button>
+            </div>
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a href="festival.html" class="mobile-nav__link">Le Festival</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="programme.html" class="mobile-nav__link">Programme</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="artistes.html" class="mobile-nav__link">Artistes</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="scenes.html" class="mobile-nav__link">Les Scènes</a>
+                </li>
+                <!-- Removed: Accueil, Infos Pratiques, Contact per request -->
+            </ul>
+        </nav>
+    </div>
+
+    <script src="../src/js/main.js"></script>
+</body>
+</html>

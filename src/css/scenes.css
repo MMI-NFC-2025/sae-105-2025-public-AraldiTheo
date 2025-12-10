@@ -1,0 +1,229 @@
+/* ==========================================================================
+   CHORUS SYMPHONIA - Scenes & Scene Detail Styles
+   ========================================================================== */
+
+/* Venue List
+   ========================================================================== */
+.venue-list {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+/* Venue Card
+   ========================================================================== */
+.venue-card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.venue-card--link {
+  cursor: pointer;
+  transition: var(--transition);
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.venue-card--link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(155, 35, 70, 0.15);
+}
+
+.venue-card__image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.venue-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.venue-card__content {
+  padding: var(--spacing-md);
+}
+
+.venue-card__title {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+  font-weight: normal;
+}
+
+.venue-card__capacity {
+  display: inline-block;
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: var(--color-white);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.venue-card__text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Scene Detail Pages
+   ========================================================================== */
+.scene-detail__hero {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scene-detail__hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scene-detail__info-card {
+  background: linear-gradient(180deg, var(--color-primary) 0%, rgba(139, 21, 56, 0.95) 100%);
+  color: var(--color-white);
+  padding: var(--spacing-lg);
+  text-align: center;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.scene-detail__name {
+  font-family: var(--font-primary);
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: var(--spacing-sm);
+}
+
+.scene-detail__capacity-badge {
+  display: inline-block;
+  background-color: rgba(247, 148, 29, 0.25);
+  color: var(--color-secondary);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: var(--spacing-sm);
+}
+
+.scene-detail__meta {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: var(--spacing-md);
+}
+
+.scene-detail__meta p {
+  margin: 4px 0;
+}
+
+.scene-detail__description {
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.scene-detail__section-title {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+  font-weight: normal;
+}
+
+.scene-detail__text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+.scene-detail__gallery-section {
+  padding: var(--spacing-md);
+}
+
+.scene-detail__cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.scene-detail__card {
+  display: flex;
+  gap: var(--spacing-md);
+  background-color: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: var(--spacing-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scene-detail__card-image {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scene-detail__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scene-detail__card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.scene-detail__card-title {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+  font-weight: normal;
+}
+
+.scene-detail__card-info {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.scene-detail__cta-section {
+  padding: var(--spacing-md);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.scene-detail__cta-section .btn--cta {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 12px 32px;
+  border-radius: 24px;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.scene-detail__cta-section .btn--cta:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(247, 148, 29, 0.3);
+}

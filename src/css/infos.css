@@ -1,0 +1,404 @@
+/* ==========================================================================
+   CHORUS SYMPHONIA - Infos & Contact Page Styles
+   ========================================================================== */
+
+/* Alert
+   ========================================================================== */
+.alert {
+  padding: var(--spacing-sm);
+  margin: var(--spacing-md);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+}
+
+.alert--warning {
+  background-color: #fff3e0;
+  border: 1px solid var(--color-secondary);
+}
+
+.alert__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.alert__text {
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+/* Info List
+   ========================================================================== */
+.info-list {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+/* Info Card
+   ========================================================================== */
+.info-card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.info-card__icon--primary {
+  background-color: var(--color-secondary);
+}
+
+.info-card__icon--secondary {
+  background-color: var(--color-primary);
+}
+
+.info-card__icon--tertiary {
+  background-color: var(--color-secondary);
+}
+
+.info-card__icon img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.info-card__title {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+  font-weight: normal;
+}
+
+.info-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.info-card__text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* Price Item
+   ========================================================================== */
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.price-item:last-child {
+  border-bottom: none;
+}
+
+.price-item__label {
+  flex: 1;
+  font-size: 15px;
+  color: var(--color-text);
+}
+
+.price-item__label-sub {
+  display: block;
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin-top: 4px;
+}
+
+.price-item__price {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* FAQ Section
+   ========================================================================== */
+.faq-section {
+  padding: var(--spacing-md);
+}
+
+.faq-section__title {
+  font-family: var(--font-primary);
+  font-size: 24px;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text);
+  font-weight: normal;
+}
+
+/* FAQ Item
+   ========================================================================== */
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-item__question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) 0;
+  text-align: left;
+  font-size: 15px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.faq-item__question:hover {
+  color: var(--color-primary);
+}
+
+.faq-item__icon {
+  font-size: 24px;
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.faq-item.is-open .faq-item__icon {
+  transform: rotate(45deg);
+}
+
+.faq-item__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.is-open .faq-item__answer {
+  max-height: 500px;
+  padding-bottom: var(--spacing-md);
+}
+
+.faq-item__answer p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+/* Contact Section
+   ========================================================================== */
+.contact-section {
+  padding: var(--spacing-md);
+}
+
+/* Contact Form
+   ========================================================================== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Form Group
+   ========================================================================== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-group__label {
+  font-size: 14px;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.form-group__input,
+.form-group__textarea {
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: 15px;
+  font-family: inherit;
+  transition: var(--transition);
+}
+
+.form-group__input:focus,
+.form-group__textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-group__textarea {
+  resize: vertical;
+}
+
+/* Contact Info
+   ========================================================================== */
+.contact-info {
+  padding: var(--spacing-lg) var(--spacing-md);
+  background-color: var(--color-light-bg);
+}
+
+.contact-info__title {
+  font-family: var(--font-primary);
+  font-size: 24px;
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  color: var(--color-text);
+  font-weight: normal;
+}
+
+/* Contact Info Item
+   ========================================================================== */
+.contact-info-item {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-info-item__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-info-item__icon--primary {
+  background-color: var(--color-secondary);
+}
+
+.contact-info-item__icon--secondary {
+  background-color: var(--color-primary);
+}
+
+.contact-info-item__icon--tertiary {
+  background-color: var(--color-secondary);
+}
+
+.contact-info-item__icon img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.contact-info-item__content {
+  flex: 1;
+}
+
+.contact-info-item__title {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text);
+  font-weight: normal;
+}
+
+.contact-info-item__text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+/* Social Section
+   ========================================================================== */
+.social-section {
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+}
+
+.social-section__title {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+  font-weight: normal;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.social-link {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.social-link:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.social-link img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+/* Partner Info
+   ========================================================================== */
+.partner-info {
+  padding: var(--spacing-lg) var(--spacing-md);
+  background-color: var(--color-light-bg);
+}
+
+.partner-info__title {
+  font-family: var(--font-primary);
+  font-size: 24px;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text);
+  font-weight: normal;
+}
+
+.partner-item {
+  margin-bottom: var(--spacing-lg);
+}
+
+.partner-item__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text);
+}
+
+.partner-item__text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+/* Gallery
+   ========================================================================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
+}
+
+.gallery__item {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}

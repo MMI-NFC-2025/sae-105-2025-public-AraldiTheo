@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Scènes - CHORUS SYMPHONIA</title>
+    <link rel="stylesheet" href="../src/css/variables.css">
+    <link rel="stylesheet" href="../src/css/global.css">
+    <link rel="stylesheet" href="../src/css/scenes.css">
+</head>
+<body>
+    <div class="site">
+        <!-- Header -->
+        <header class="header header--secondary">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/icons/logo.avif" alt="Logo" class="header__logo-img">
+            </a>
+            <h1 class="header__title">Les Scènes</h1>
+            <button class="header__menu-btn" id="menuBtn">
+                <span class="header__menu-icon"></span>
+                <span class="header__menu-icon"></span>
+                <span class="header__menu-icon"></span>
+            </button>
+        </header>
+
+        <section class="page-intro">
+            <p class="page-intro__text">Découvrez les lieux du festival</p>
+        </section>
+
+        <!-- Venue Cards -->
+        <section class="venue-list">
+            <a href="scene-detail-grande.html" class="venue-card venue-card--link">
+                <div class="venue-card__image-wrapper">
+                    <img src="/assets/images/venue-grande-scene.avif" alt="Grande Scène" class="venue-card__image">
+                </div>
+                <div class="venue-card__content">
+                    <h2 class="venue-card__title">Grande Scène</h2>
+                    <p class="venue-card__capacity">2 000 places</p>
+                    <p class="venue-card__text">
+                        La Grande Scène, située au cœur de la Citadelle de Besançon, accueille les concerts symphoniques et les grandes formations. Son acoustique exceptionnelle et son cadre historique en font un lieu unique pour vivre des moments musicaux d'exception.
+                    </p>
+                </div>
+            </a>
+
+            <article class="venue-card">
+                <div class="venue-card__image-wrapper">
+                    <img src="/assets/images/venue-baroque.avif" alt="Salle Intimiste" class="venue-card__image">
+                </div>
+                <div class="venue-card__content">
+                    <h2 class="venue-card__title">Salle Intimiste</h2>
+                    <p class="venue-card__capacity">500 places</p>
+                    <p class="venue-card__text">
+                        La Salle Vauban propose une acoustique adaptée aux ensembles de chambre et à la musique baroque. D'une capacité de 500 places, elle offre une proximité unique avec les artistes et permet une expérience musicale intimiste et raffinée.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Footer Event Card -->
+        <section class="event-card">
+            <h2 class="event-card__title">CHORUS SYMPHONIA</h2>
+            <p class="event-card__subtitle">Festival 2025</p>
+            <p class="event-card__date">Du 28 au 31 août 2025 à La Citadelle de Besançon</p>
+            <a href="programme.html" class="btn btn--secondary">Voir le Programme</a>
+            <a href="contact.html" class="btn btn--tertiary">Contact</a>
+            <p class="event-card__footer">© 2025 Chorus Symphonia. Tous droits réservés.</p>
+        </section>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav__header">
+                <h2 class="mobile-nav__title">Menu</h2>
+                <button class="mobile-nav__close" id="closeNav">&times;</button>
+            </div>
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a href="festival.html" class="mobile-nav__link">Le Festival</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="programme.html" class="mobile-nav__link">Programme</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="artistes.html" class="mobile-nav__link">Artistes</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="scenes.html" class="mobile-nav__link mobile-nav__link--active">Les Scènes</a>
+                </li>
+                <!-- Removed: Accueil, Infos Pratiques, Contact per request -->
+            </ul>
+        </nav>
+    </div>
+
+    <script src="../src/js/main.js"></script>
+</body>
+</html>
