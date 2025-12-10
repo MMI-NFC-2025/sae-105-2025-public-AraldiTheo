@@ -27,6 +27,19 @@
             <p class="page-intro__text">Découvrez tous les concerts du festival</p>
         </section>
 
+        <!-- Filter Section -->
+        <section class="search-filter">
+            <div class="filters">
+                <button class="filter-btn filter-btn--active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="28">28 août</button>
+                <button class="filter-btn" data-filter="29">29 août</button>
+                <button class="filter-btn" data-filter="30">30 août</button>
+                <button class="filter-btn" data-filter="31">31 août</button>
+                <button class="filter-btn" data-filter="grande">Grande Scène</button>
+                <button class="filter-btn" data-filter="baroque">Musique Baroque</button>
+            </div>
+        </section>
+
         <!-- Alert -->
         <div class="alert alert--warning">
             <img src="../assets/icons/info.svg" alt="" class="alert__icon">
@@ -34,8 +47,8 @@
         </div>
 
         <!-- Concert Cards -->
-        <section class="concert-list">
-            <article class="concert-card">
+        <section class="concert-list" id="concertList">
+            <article class="concert-card" data-date="28" data-location="grande" data-genre="classique">
                 <div class="concert-card__image-wrapper">
                     <img src="../assets/image/concert-violin.avif" alt="Concert" class="concert-card__image">
                 </div>
@@ -54,7 +67,7 @@
                 </div>
             </article>
 
-            <article class="concert-card">
+            <article class="concert-card" data-date="29" data-location="grande" data-genre="baroque">
                 <div class="concert-card__image-wrapper">
                     <img src="../assets/image/concert-baroque.avif" alt="Concert" class="concert-card__image">
                 </div>
@@ -73,7 +86,7 @@
                 </div>
             </article>
 
-            <article class="concert-card">
+            <article class="concert-card" data-date="30" data-location="grande" data-genre="symphonique">
                 <div class="concert-card__image-wrapper">
                     <img src="../assets/image/concert-symphonic.avif" alt="Concert" class="concert-card__image">
                 </div>
@@ -92,7 +105,7 @@
                 </div>
             </article>
 
-            <article class="concert-card">
+            <article class="concert-card" data-date="30" data-location="vauban" data-genre="philharmonique">
                 <div class="concert-card__image-wrapper">
                     <img src="../assets/image/concert-philharmonic.avif" alt="Concert" class="concert-card__image">
                 </div>

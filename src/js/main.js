@@ -177,4 +177,34 @@
     // Auto-play (optional, uncomment to enable)
     // setInterval(nextSlide, 5000)
   })
+
+  // Programme Page - Filter
+  const filterBtns = document.querySelectorAll('.filter-btn')
+  const concertCards = document.querySelectorAll('.concert-card')
+  
+  // Filter functionality
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('filter-btn--active'))
+      btn.classList.add('filter-btn--active')
+      
+      // Get filter value
+      const filter = btn.dataset.filter
+      
+      // Apply filter
+      concertCards.forEach(card => {
+        const date = card.dataset.date || ''
+        const location = card.dataset.location || ''
+        const genre = card.dataset.genre || ''
+        
+        // Check filter
+        if (filter === 'all' || date === filter || location === filter || genre === filter) {
+          card.style.display = 'block'
+        } else {
+          card.style.display = 'none'
+        }
+      })
+    })
+  })
 })()
