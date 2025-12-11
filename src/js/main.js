@@ -182,29 +182,35 @@
   const filterBtns = document.querySelectorAll('.filter-btn')
   const concertCards = document.querySelectorAll('.concert-card')
   
-  // Filter functionality
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // Update active button
-      filterBtns.forEach(b => b.classList.remove('filter-btn--active'))
-      btn.classList.add('filter-btn--active')
-      
-      // Get filter value
-      const filter = btn.dataset.filter
-      
-      // Apply filter
-      concertCards.forEach(card => {
-        const date = card.dataset.date || ''
-        const location = card.dataset.location || ''
-        const genre = card.dataset.genre || ''
+  if (filterBtns.length > 0 && concertCards.length > 0) {
+    // Filter functionality
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('filter-btn--active'))
+        btn.classList.add('filter-btn--active')
         
-        // Check filter
-        if (filter === 'all' || date === filter || location === filter || genre === filter) {
-          card.style.display = 'block'
-        } else {
-          card.style.display = 'none'
-        }
+        // Get filter value
+        const filter = btn.getAttribute('data-filter')
+        
+        // Apply filter
+        concertCards.forEach(card => {
+          if (filter === 'all') {
+            card.style.display = ''
+          } else {
+            const date = card.getAttribute('data-date')
+            const location = card.getAttribute('data-location')
+            const genre = card.getAttribute('data-genre')
+            
+            // Check filter
+            if (date === filter || location === filter || genre === filter) {
+              card.style.display = ''
+            } else {
+              card.style.display = 'none'
+            }
+          }
+        })
       })
     })
-  })
+  }
 })()
