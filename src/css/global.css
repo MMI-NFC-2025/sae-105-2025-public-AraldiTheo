@@ -148,13 +148,14 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 80%;
+  width: 100%;
   height: 100%;
   background: linear-gradient(180deg, var(--color-primary) 0%, rgba(139,21,56,0.95) 100%);
   z-index: 1000;
   transition: right 0.3s ease;
-  box-shadow: -2px 0 16px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-nav.is-open {
@@ -165,39 +166,57 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-md);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: var(--spacing-lg) var(--spacing-md);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
 .mobile-nav__title {
   font-family: var(--font-primary);
-  font-size: 24px;
+  font-size: 28px;
   color: var(--color-white);
   font-weight: normal;
+  letter-spacing: 2px;
 }
 
 .mobile-nav__close {
-  font-size: 32px;
+  font-size: 40px;
   color: var(--color-white);
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all var(--transition);
+}
+
+.mobile-nav__close:hover {
+  transform: rotate(90deg);
 }
 
 .mobile-nav__list {
   list-style: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
 }
 
 .mobile-nav__item {
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin: 0 var(--spacing-md);
 }
 
 .mobile-nav__link {
   display: block;
-  padding: 14px var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md);
   color: var(--color-white);
+  font-size: 24px;
+  transition: all var(--transition);
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
   font-size: 16px;
   transition: var(--transition);
 }
@@ -208,9 +227,9 @@
 }
 
 .mobile-nav__link--active {
-  background-color: rgba(247,148,29,0.25);
-  color: var(--color-secondary);
-  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--color-white);
+  font-weight: 600;
 }
 
 /* Event Card
