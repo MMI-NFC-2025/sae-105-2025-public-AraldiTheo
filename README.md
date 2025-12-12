@@ -6,7 +6,7 @@
 - NOM :Araldi
 - PRÉNOM :Théo
 - GROUPE :C1
-- URL du site :
+- URL du site :https://sae-105-2025-araldi-theo.netlify.app/   pas de nom de domain sur infomaniak 
 - URL FIGMA :https://www.figma.com/design/lHPa0J6tXyBF1qf8ecAU6C/Sa%C3%A9-105?node-id=2-866&t=WHK3MsxeKSsr8Skd-0
 
 ## Sujet
